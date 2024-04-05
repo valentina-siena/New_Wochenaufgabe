@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background);
+    color: var(--white);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #FF5943;
+    --border: #F44C39;
+    --white: #fff;
+}
+
+nav,
+a {
+    text-decoration: none;
+    font-size: 33.75px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.338px;
+    text-transform: uppercase;
+    gap: 20px;
+}
+
+a:hover,
+.current {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+
+
+h1 {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 80px;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0.56px;
+}
+
+h4 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.32px;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.24px;
+    margin: 0;
+}
+
+img {
+    object-fit: cover;
+}
+
+/*********************** body **********************/
+
+body {
+    padding: 176px 120px 177px 120px;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    padding: 32px 72px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    border: 4px solid var(--border);
+}
+
+section#icons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    border: 2px solid transparent;
+}
+
+#icons div {
+    border: 2px solid var(--border);
+    padding: 10px 11px 10px 11px;
+    display: flex;
+    align-items: center;
+    background-color: var(--border);
+    border-radius: 50px;
+
+}
+
+
+#icons div:hover {
+    border: 2px solid #ffffff;
+}
+
+header section#icons i {
+    width: 34px;
+    height: 34px;
+    stroke-width: 2px;
+    background-color: var(--border);
+}
+
+svg.feather.feather-youtube,
+svg.feather.feather-facebook,
+svg.feather.feather-twitter {
+    background-color: var(--border);
+}
+
+
+
+
+
+/********************************* index ****************************/
+.index {
+    display: flex;
+    flex-direction: row;
+    border-radius: 16px;
+    border: 4px solid var(--border);
+    gap: 20px;
+    overflow: hidden;
+    /* Bildüberlauf verstecken */
+}
+
+article {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+button {
+    padding: 16px 32px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--border);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    border: 2px solid transparent;
+}
+
+button:hover {
+    border: 2px solid #ffffff;
+}
+
+img.luke {
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.luke:hover {
+    transform: scale(1.05);
+}
+
+
+
+/******************************** works *****************************/
+
+main.works {
+    width: 100%;
+    border-radius: 16px;
+    border: 4px solid var(--border);
+    overflow: hidden;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    width: 100%;
+    border-radius: 32px;
+}
+
+
+.grid-container img {
+    justify-self: stretch;
+}
+
+
+img.item1 {
+    grid-column: 1 / 2;
+    grid-row: 1 /3;
+}
+
+img.item2 {
+    grid-column: 2 / 3;
+    grid-row: 1 /2;
+}
+
+img.item3 {
+    grid-column: 2 / 3;
+    grid-row: 2 /3;
+}
+
+img.item4 {
+    grid-column: 1 / 3;
+    grid-row: 3 /5;
+}
+
+img.item5 {
+    grid-column: 1 / 2;
+    grid-row: 5 /6;
+}
+
+img.item6 {
+    grid-column: 2 / 3;
+    grid-row: 5 /6;
+}
+
+
+/********************************** about ************************************/
+main.about {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-item-1 {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    border: 4px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.item-2-3 {
+    display: flex;
+    flex-direction: row;
+    border: 4px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.about-item-2 {
+    border-right: 4px solid var(--border);
+}
+
+
+/************ bilder *************/
+
+.grid-container-about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+    border-right: 4px solid var(--border);
+}
+
+
+.grid-container-about img {
+    justify-self: stretch;
+}
+
+
+img.item1-about {
+    grid-column: 1 / 2;
+    grid-row: 1 /2;
+}
+
+img.item2-about {
+    grid-column: 2 / 3;
+    grid-row: 1 /2;
+}
+
+img.item3-about {
+    grid-column: 1 / 2;
+    grid-row: 2 /3;
+}
+
+img.item4-about {
+    grid-column: 2 / 3;
+    grid-row: 2 /3;
+}
+
+.nav-burger {
+    display: none;
+}
+
+
+/************************ responsive ******************************/
+@media only screen and (max-width: 768px) {
+
+    /* absätze */
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    body {
+        padding: 30px;
+        width: 100%;
+    }
+
+
+    /* header */
+    header {
+        padding: 30px;
+        align-content: center;
+    }
+
+
+
+    a {
+        font-size: 0;
+    }
+
+    .logo {
+        width: 100px;
+        height: 33.677px;
+    }
+
+    section#icons {
+        display: none;
+    }
+
+    /************** index ***********/
+    .index {
+        flex-direction: column-reverse;
+        gap: 30px;
+        width: 100%;
+
+    }
+
+    article {
+        padding: 0px 30px 30px 30px;
+        flex-direction: column;
+        gap: 12px;
+
+    }
+
+    button {
+
+        font-size: 24px;
+        align-self: center;
+    }
+
+    img.luke {
+        height: 300px;
+        align-self: stretch;
+        border-bottom-right-radius: 0px;
+    }
+
+    /*************** works ************/
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item {
+        object-fit: stretch;
+        height: 300px;
+        width: 100%;
+    }
+
+
+    /* about */
+    main.about {
+        gap: 30px;
+        width: 100%;
+    }
+
+    article.about-item-1 {
+        gap: 12px;
+        padding: 30px;
+    }
+
+
+    .item-2-3 {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .about-item-2 {
+        border-right: 0px solid;
+        border-bottom: 4px solid var(--border);
+    }
+
+    /* icons */
+    #icons.about {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+    }
+
+    .grid-container-about {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    /* burger menu */
+
+}
+/* Ausblenden Desktop Nav */
+ /* Ausblenden Desktop Nav */
+ 
+ #main_menu ul {
+    display: none;
+  }
+ 
+  .logo {
+    display: block;
+  }
+ 
+  #icons {
+    display: none;
+  }
+ 
+ 
+  /* BURGER MENU */
+ 
+  .nav-burger.open {
+    display: block;
+  }
+ 
+  .nav-burger {
+    background: none;
+    border: none;
+    z-index: 1;
+  }
+ 
+  .nav-burger svg {
+    width: 40px;
+    height: 40px;
+    color: white;
+  }
+ 
+  #main_menu.expanded ul {
+    display: block;
+    position: absolute;
+    top: 18%;
+    left: 0%;
+    width: 100%;
+    padding-left: 117px;
+    flex-direction: column;
+    justify-content: flex-start;
+ 
+  }
+ 
+  nav.expanded .nav-burger.open {
+    display: none;
+  }
+ 
+  nav.expanded .nav-burger.close {
+    display: block;
+  }
+ 
